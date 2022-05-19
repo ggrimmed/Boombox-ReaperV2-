@@ -8,6 +8,35 @@ local UI = Material.Load({
      Theme = "Dark"
 })
 
+local HomePage = UI.New({
+    Title = "Home"
+})
+
+HomePage.Button({
+    Text = "Hello, I made some good updates!",
+    Callback = function()
+        print('Hi')
+    end
+})
+
+HomePage.Button({
+    Text = "There is a easier way to join the discord",
+    Callback = function()
+        print('Hi')
+    end
+})
+
+HomePage.Button({
+    Text = "Added a home tab and around 5 more scripts",
+    Callback = function()
+        print('Hi')
+    end
+})
+
+UI.Banner({
+    Text = "Join The Discord"
+})
+
 local BoomboxPage = UI.New({
     Title = "Boombox Hubs"
 })
@@ -39,9 +68,39 @@ BoomboxPage.Button({
 BoomboxPage.Button({
     Text = "Lucious-Ware",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ggrimmed/Lucious-Ware/main/cracked_lucious_ware.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/vyks/vyks/main/PremiumLucious.lua"))()
     end
 })
+
+BoomboxPage.Button({
+    Text = "Pineapple Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/vyks/vyks/main/AuxPineapple2.lua"))()
+    end
+})
+
+BoomboxPage.Button({
+    Text = "Fanta Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/vyks/vyks/main/FantaHub2.lua"))()
+    end
+})
+
+BoomboxPage.Button({
+    Text = "Space Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/vyks/vyks/main/SpaceHub.lua"))()
+    end
+})
+
+BoomboxPage.Button({
+    Text = "Free Lucious Ware",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/vyks/vyks/main/NormalLucious.lua"))()
+    end
+})
+
+
 
 BoomboxPage.Button({
     Text = "Hash Hub (Synapse Only)",
@@ -58,7 +117,7 @@ BoomboxPage.Button({
 })
 
 BoomboxPage.Button({
-    Text = "Fanta-Hub",
+    Text = "Fanta-Hub 2",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kyakuryc/fanta-hub/main/fanta_hub_raw.txt",true))()
     end
@@ -85,6 +144,13 @@ BoomboxPage.Button({
     end
 })
 
+BoomboxPage.Button({
+    Text = "Oxis Admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Oxisist/myscripts/eb16dee222392f282184dd5785c09fbdafbf4ce4/OxisAdmin.lua"))()
+    end
+})
+
 -- LOGGERS --
 
 local LoggerPage = UI.New({
@@ -108,6 +174,13 @@ AntiPage.Button({
     Text = "Anti-Steal v7.33",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/uHznnqmM'))()
+    end
+})
+
+AntiPage.Button({
+    Text = "Serenity",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/v9h/Serenity/main/main.lua"))()
     end
 })
 
@@ -250,6 +323,13 @@ local CreditsPage = UI.New({
     Title = "Credits"
 })
 
+CreditsPage.Button({
+    Text = "Discord",
+    Callback = function()
+        setclipboard("https://discord.gg/WCq8mX8bua")
+    end
+})
+
 CreditsPage.TextField({
     Text = "Scripts put together and found by immensity",
     Callback = function(value)
@@ -264,9 +344,4 @@ CreditsPage.TextField({
     end
 })
 
-CreditsPage.TextField({
-    Text = "Join us ----> https://discord.gg/WCq8mX8bua",
-    Callback = function(value)
-        print(value)
-    end
-})
+
