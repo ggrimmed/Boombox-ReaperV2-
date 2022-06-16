@@ -20,14 +20,7 @@ HomePage.Button({
 })
 
 HomePage.Button({
-    Text = "There is a easier way to join the discord",
-    Callback = function()
-        print('Hi')
-    end
-})
-
-HomePage.Button({
-    Text = "Added a home tab and around 5 more scripts",
+    Text = "Added More Scripts",
     Callback = function()
         print('Hi')
     end
@@ -48,6 +41,13 @@ BoomboxPage.Button({
     Text = "Verts Hub",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/xSAW2uX0'))()
+    end
+})
+
+BoomboxPage.Button({
+    Text = "Error Log",
+    Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Enviie/Errorlog-s-Boombox-Visualizer-Crack/main/Error's%20Boombox%20Vis%20Main.lua"))("Enviie Soo Hot!")
     end
 })
 
@@ -252,6 +252,13 @@ AdminPage.Button({
     end
 })
 
+AdminPage.Button({
+    Text = "Reviz",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.pl/view/raw/d06345fe'))()
+    end
+})
+
 
 local ETCPage = UI.New({
     Title = "ETC"
@@ -343,5 +350,4 @@ CreditsPage.TextField({
         print(value)
     end
 })
-
 
